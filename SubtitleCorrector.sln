@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtitleCorrector", "SubtitleCorrector\SubtitleCorrector.csproj", "{B064B94F-2ABF-4711-8E58-4A3CEA2FFCF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B064B94F-2ABF-4711-8E58-4A3CEA2FFCF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B064B94F-2ABF-4711-8E58-4A3CEA2FFCF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B064B94F-2ABF-4711-8E58-4A3CEA2FFCF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B064B94F-2ABF-4711-8E58-4A3CEA2FFCF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {001BE6C6-211D-4A2C-A2E6-6A7D911D44B9}
+	EndGlobalSection
+EndGlobal

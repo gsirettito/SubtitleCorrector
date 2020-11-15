@@ -1,0 +1,47 @@
+﻿<UserControl x:Name="userControl" x:Class="SiretT.Controls.VideoPlayer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:sirett="clr-namespace:SiretT.Controls"
+             mc:Ignorable="d" Loaded="playerLoaded"
+             Width="Auto" Height="Auto"
+             FontSize="20"
+             FontWeight="Bold" Foreground="Yellow"
+             d:DesignHeight="300" d:DesignWidth="300" IsVisibleChanged="UserControl_IsVisibleChanged">
+    <DockPanel>
+        <Grid>
+            <Rectangle Name="rPlayer">
+                <Rectangle.Fill>
+                    <DrawingBrush Stretch="Uniform">
+                        <DrawingBrush.Drawing>
+                            <VideoDrawing x:Name="drawg">
+                                <VideoDrawing.Player>
+                                    <MediaPlayer x:Name="player" MediaOpened="player_MediaOpened" Volume="1"/>
+                                </VideoDrawing.Player>
+                            </VideoDrawing>
+                        </DrawingBrush.Drawing>
+                    </DrawingBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Button HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="15,0,15,25"
+                    Background="Transparent"
+                    BorderBrush="{x:Null}"
+                    BorderThickness="0"
+                    Padding="6,2"
+                    PreviewMouseDown="Grid_MouseDown" Foreground="{Binding Foreground, ElementName=userControl}">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="0" ShadowDepth="4" Direction="292" Opacity="0.5"/>
+                </Button.Effect>
+                <sirett:OutlinedTextBlock x:Name="subtitle"
+                                          TextWrapping="Wrap"
+                                          Fill="{Binding Foreground, ElementName=userControl}"
+                                          StrokeThickness="2" Stroke="Black" TextAlignment="Center">Está bien. Tienes razón, Jackie, el
+Fonz podría vencer a Bruce Lee.
+                </sirett:OutlinedTextBlock>
+            </Button>
+        </Grid>
+    </DockPanel>
+</UserControl>
