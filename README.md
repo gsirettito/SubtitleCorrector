@@ -1,3 +1,6 @@
 # SubtitleCorrector
 
-Fixes when each subtitle should be displayed in a simple way
+Subtitle corrector.
+
+Features:
+* Only supports SubRip (.srt) format.
